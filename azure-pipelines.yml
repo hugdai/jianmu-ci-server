@@ -1,7 +1,8 @@
 trigger:
   - master
 
-pool: Azure Pipelines
+pool: 
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: Maven@3
