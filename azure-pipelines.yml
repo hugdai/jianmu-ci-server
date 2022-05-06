@@ -1,5 +1,9 @@
 trigger:
-- 1.1.1
+  branches:
+    include:
+      - 1.1.1
+    exclude:
+      - test
 
 pool:
   vmImage: ubuntu-latest
