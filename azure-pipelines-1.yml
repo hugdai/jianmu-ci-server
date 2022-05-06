@@ -8,8 +8,22 @@ trigger:
 pool: 
   vmImage: 'ubuntu-latest'
 
-steps:
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'echo 你好'
+
+stages:
+  - stage: A
+    jobs:
+    - job: A1
+      steps:
+      - task: Bash@3
+        displayName: A1-1
+        inputs:
+          targetType: 'inline'
+          script: 'echo 你好'
+    - job: A2
+      steps:
+      - task: Bash@3
+        displayName: A2-1
+        inputs:
+          targetType: 'inline'
+          script: 'echo 你好'
+
