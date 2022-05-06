@@ -8,4 +8,4 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'echo "你好“'
+    script: 'echo 你好'
