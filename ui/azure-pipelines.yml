@@ -28,4 +28,3 @@ steps:
     script: |
       echo "Hello world，$name"
 
-- template: 
